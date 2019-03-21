@@ -1,0 +1,40 @@
+---
+title: "Index"
+author: "Mia"
+date: "3/8/2019"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chipering
+
+Data to encrypt.
+```{r cars}
+df <- readLines("sifra1.txt")
+df = strsplit(df[1], split='')
+print(df[[1]])
+```
+
+
+Chipers in separate shiny app :D
+```{r, echo = FALSE}
+shinyAppDir("button/",
+  options = list(width = "100%", height = 150)
+)
+```
+
+
+Chipers in javascript shiny app :D
+```{r, echo = FALSE}
+shinyAppDir("buttonJS/",
+  options = list(width = "100%", height = 700)
+)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Locally running on http://127.0.0.1:3860/

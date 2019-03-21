@@ -1,0 +1,12 @@
+name: e-book
+title: e-book
+username:
+account: mathtravel
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 806031
+bundleId: 1956580
+url: https://mathtravel.shinyapps.io/e-book/
+when: 1553206190.2889
+asMultiple: FALSE
+asStatic: FALSE
